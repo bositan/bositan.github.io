@@ -70,6 +70,25 @@
 </section>
     <!-- 欧尼酱功能, 谁用谁知道 -->
     
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="https://bositan.github.io" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
         <div class="navbar-header">
@@ -250,7 +269,7 @@
             <p style="text-align: center;">
                 <a href="/2023/12/16/%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/">
                     
-                    <img src="/imgs/preview/preview1.jpg" alt="测试博客">
+                    <img src="/imgs/preview/preview4.jpg" alt="测试博客">
                 </a>
             </p>
         </div>
@@ -288,6 +307,8 @@
 </div>
 
 <!-- 加上这段代码原因： gitment在首页加载时, 如果找不到对应的控件会报错，此处加上，同时设置为none，防止报错 -->   
+  
+    <div id="comments-template" style="display:none"></div> 
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -400,7 +421,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/nothing/" style="font-size: 19.434163804156317px;" class="tag-cloud-link">nothing</a>
+    <a href="/tags/nothing/" style="font-size: 18.231447178353566px;" class="tag-cloud-link">nothing</a>
     
 </div>
                 
@@ -511,6 +532,34 @@
 <script src="/js/blog.js"></script>
 
 
+
+<script src="/js/oni.js"></script>
+
+
+
+
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = ''
+      window.commentConfig.owner = 'bositan'
+      window.commentConfig.repo = 'comment'
+      window.commentConfig.client_id = '49069bb6d5244dd8fa5e'
+      window.commentConfig.client_secret = '6196ff7ec235b0fc5e5f6d26feb54a42d777cc93'
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: '',
+        owner: 'bositan',
+        repo: 'comment',
+        client_id: '49069bb6d5244dd8fa5e',
+        client_secret: '6196ff7ec235b0fc5e5f6d26feb54a42d777cc93',
+        redirect_uri: ''
+      }
+    }
+</script>
+
+<script src="/js/comment/gitment.js"></script>
 
 
 </html>
